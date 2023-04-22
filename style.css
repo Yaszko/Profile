@@ -208,6 +208,7 @@ section{
 
     section{
         width: 100%;
+        box-shadow: none;
     }
 
     main{
@@ -299,6 +300,7 @@ section{
 
     #Contato{
         width: 300px;
+        margin: auto;
     }
 
     #Contato > ul > li{
