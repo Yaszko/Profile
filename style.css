@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota:wght@300&family=Nixie+One&family=Poiret+One&family=Raleway:wght@200;300&family=Ysabeau:wght@100&display=swap');
+
+*{
+    scroll-behavior: smooth;
+}
+
+body{
+    line-height: 36px;
+    font-family: Bellota, sans-serif;
+    margin: auto;
+    margin-top: 70px;
+    width: 80%;
+    background: rgb(200,82,247);
+    background: radial-gradient(circle, rgba(200,82,247,1) 0%, rgba(94,230,247,1) 100%);
+}
+
+header{
+    justify-content: space-between;
+    background-color: white;
+    display: flex;
+    text-align: center;
+    border-style: solid;
+    border-radius: 15px 15px 0px 0px;
+    border-width: 1px;
+    border-bottom: 0px;
+}
+
+header > nav > ul{
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding-left: 0px;
+}
+
+nav > ul > li{
+    display: inline-block;
+    padding: 15px;
+}
+
+main{
+    padding: 80px;
+    text-align: center;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 70px;
+    background-color: white;
+    border-style: solid;
+    border-radius: 0px 0px 15px 15px;
+    border-width: 1px;
+    border-top: none;
+}
+
+h1{
+    font-family: Ysabeau;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0px;
+    padding: 10px;
+}
+
+
+h2{
+    font-family: Nixie One;
+    font-size: 40px;
+    font-weight: light;
+}
+
+h3{
+    margin-top: 0px;
+}
+
+img{
+    border-radius: 20%;
+    padding: 40px;
+    width: 240px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:visited{
+    color: black;
+}
+
+ul{
+    list-style-type: none;
+}
+
+p{
+    text-align: center;
+}
+
+li{
+    text-align: center;
+}
+
+section{
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 40px;
+}
+
+.justify{
+    text-align: justify;
+}
+
+#Sobre{
+    margin-top: 0px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#Sobre > div{
+    padding: 20px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+
+#Atendimento{
+    text-align: center;
+}
+
+.content{
+    display: inline-block;
+    padding: 20px;
+    padding-top: 0px;
+    margin: 15px;
+    margin-top: 0px;
+}
+
+@media (max-width: 768px) {
+
+    #Sobre > div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .justify{
+        line-height: 30px;
+        width: auto;
+    }
+
+    img{
+        width: 300px;
+    }
+}
+
+@media (max-width: 725px){
+    body{
+        width: 80%;
+    }
+    
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav{
+        margin: auto;
+    }
+    
+    img{
+        width: 230px;
+    }
+}
+
+@media (max-width: 425px){
+    body{
+        width: 90%;
+        margin: auto;
+        margin-top: 21.25px
+    };
+
+    img{
+        padding: 0px;
+    }
+
+    section{
+        width: 100%;
+    }
+
+    main{
+        padding: 10px;
+        margin-bottom: 21.25px;
+        border-style: solid;
+        border-width: 1px;
+    }
+
+    #Valores > p{
+        padding: 5px;
+    }
+
+    #Localização > ul > li{
+        text-align: justify;
+    }
+
+    nav > ul > li{
+        padding: 5px;
+    }
+
+    section{
+        border-width: 0px;
+    }
+
+    #Sobre{
+        border-width: 0px;
+    }
+
+    .justify{
+        letter-spacing: 0px;
+        font-size: 16px;
+    }
+
+    div#Conteúdo.content{
+        padding: 0px;
+        margin: auto;
+    }
+
+    div#Didática.content{
+        padding: 0px;
+        margin: auto;
+    }
+
+    li.justify{
+        margin: auto;
+        text-align: center;
+    }
+
+    div#Localização{
+        letter-spacing: 0px;
+        padding: 5px;
+    }
+
+    div#Localização > ul > li{
+        text-align: center;
+    }
+
+    div#Localização > h2{
+        margin-top: 0;
+    }
+
+    ul{
+        padding-left: 0;
+    }
+
+    #Sobre > div{
+        padding: 5px;
+        border-style: solid;
+        border-width: 0px 0px 1px 0px;
+    }
+
+    h2{
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+
+    #Trabalho > h2{
+        display: none;
+    }
+
+    img{
+        padding: 0px;
+    }
+
+    .hide{
+        display: none;
+    }
+
+    #Contato{
+        width: 300px;
+    }
+
+    #Contato > ul > li{
+        text-align: justify;
+    }
+
+    #Trabalho{
+        border-width: 0px 0px 1px 0px;
+    }
+
+    #Atendimento{
+        border-width: 0px 0px 1px 0px;
+    }
+}
