@@ -132,11 +132,23 @@ section{
     margin-top: 0px;
 }
 
+@media (max-width: 960px){
+    #Sobre > div{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
 @media (max-width: 768px) {
 
     #Sobre > div{
         display: flex;
         flex-direction: column;
+    }
+
+    #Localização > ul{
+        padding-left: 0;
     }
 
     .justify{
@@ -145,7 +157,8 @@ section{
     }
 
     img{
-        width: 300px;
+        width: 250px;
+        padding: 10px;
     }
 }
 
@@ -168,7 +181,20 @@ section{
     }
 }
 
-@media (max-width: 425px){
+@media (max-width: 670px){
+
+    body{
+        width: 90%;
+        margin: auto;
+        margin-top: 21.25px;
+    }
+
+    main{
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px){
     body{
         width: 90%;
         margin: auto;
