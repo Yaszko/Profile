@@ -133,6 +133,10 @@ section{
     margin-top: 0px;
 }
 
+@media (max-width: 1500px){
+    
+}
+
 @media (max-width: 1024px){
     body{
         width: 80%;
