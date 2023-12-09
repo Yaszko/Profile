@@ -9,7 +9,7 @@ body{
     font-family: Bellota, sans-serif;
     margin: auto;
     margin-top: 70px;
-    width: 80%;
+    width: 65%;
     background: rgb(200,82,247);
     background: radial-gradient(circle, rgba(200,82,247,1) 0%, rgba(94,230,247,1) 100%);
 }
