@@ -109,27 +109,55 @@
           </div>
         </div>
       </section>
-      <section id="faq">
+      <section id="faq" class="faq">
         <h2>Perguntas Frequentes</h2>
-          <details>
-            <summary>Como funciona o desconto por indicação?</summary>
-            <p>Ao indicar alguém para ter aulas comigo, no primeiro mês que seu colega tiver aulas, você recebe o desconto de indicação.</p>
-          </details>
-          <details>
-            <summary>Caso eu queira repor uma aula, como faz?</summary>
-            <p>Caso você não compareça na aula no horário combinado, não haverá reposição. Entretanto, caso você avise com 24 horas de antecedência que não poderá comparecer, nós remarcaremos a aula para outro dia. O valor não é alterado, independente do caso.</p>
-          </details>
-          <details>
-            <summary>E se eu quiser mudar de pacote durante o mês?</summary>
-            <p>Caso você decida contratar um novo pacote, você terá todas as aulas referentes ao pacote anterior até o fim do mês e, no próximo mês começaremos as atividades referentes ao novo pacote.<p>
-          </details>
-          <details>
-            <summary>E o pagamento?</summary>
-            <p>Após a primeira aula gratuita, caso você queira contratar algum pacote, o pagamento é feito antes das aulas começarem.</p>
+          <ul>
+            <li>
+              <div class="questao">
+                <span>Como funciona o desconto por indicação?</span>
+                <span class="icon"><ion-icon name="add-outline"></ion-icon></span>
+              </div>
+              <div class="resposta">
+                <span>Ao indicar alguém para ter aulas comigo, no primeiro mês que seu colega tiver aulas, você recebe o desconto de indicação.</span>
+              </div>
+            </li>
+            <li><div class="questao">
+              <span>Caso eu queira repor uma aula, como faço?</span>
+              <span class="icon"><ion-icon name="add-outline"></ion-icon></span>
+            </div>
+            <div class="resposta">
+              <span>Caso você não compareça na aula no horário combinado, não haverá reposição. Entretanto, caso você avise com 24 horas de antecedência que não poderá comparecer, nós remarcaremos a aula para outro dia. O valor não é alterado, independente do caso.</span>
+            </div>
+          </li>
+          <li><div class="questao">
+            <span>E se eu quiser mudar de pacote durante o mês?</span>
+            <span class="icon"><ion-icon name="add-outline"></ion-icon></span>
+          </div>
+          <div class="resposta">
+            <span>Caso você decida contratar um novo pacote, você terá todas as aulas referentes ao pacote anterior até o fim do mês e, no próximo mês começaremos as atividades referentes ao novo pacote.</span>
+          </div>
+        </li>
+        <li><div class="questao">
+          <span>E o pagamento?</span>
+          <span class="icon"><ion-icon name="add-outline"></ion-icon></span>
+        </div>
+        <div class="resposta">
+          <span>pós a primeira aula gratuita, caso você queira contratar algum pacote, o pagamento é feito antes das aulas começarem.
 
-            <p>Formas de pagamento: PIX, transferência ou dinheiro.</p>
-          </details>
+            Formas de pagamento: PIX, transferência ou dinheiro.</span>
+        </div>
+      </li>
+          </ul>
       </section>
+      <script>
+        const questao = document.querySelectorAll('.questao')
+
+        questao.forEach(function (questao) {
+          questao.addEventListener('click', function() {
+            questao.classList.toggle('open')
+          })
+        })
+      </script>
       <section id="Contato">
         <h2>Contato</h2>
         <ul>
@@ -140,4 +168,6 @@
       </section>
     </main>
   </body>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </html>
